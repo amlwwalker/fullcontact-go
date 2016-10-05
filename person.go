@@ -192,7 +192,7 @@ type LocationPart struct {
 
 // SocialProfile is a sub-model of PersonResponse
 type SocialProfile struct {
-	ID        int64  `json:"id,string"`
+	ID        string  `json:"id,string"`
 	Type      string `json:"type"`
 	TypeID    string `json:"typeId"`
 	TypeName  string `json:"typeName"`
