@@ -82,7 +82,7 @@ package fullcontact
 type CompanyResponse struct {
 	Status         int64           `json:"status"`
 	RequestID      string          `json:"requestId"`
-	Category       Category        `json:"category"`
+	Category       []Category      `json:"category"`
 	Logo           string          `json:"logo"`
 	Website        string          `json:"website"`
 	Locale         string          `json:"languageLocale"`

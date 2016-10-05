@@ -16,7 +16,7 @@ func (c *CompanyAPI) Domain(value string, webhook *Webhook) (*CompanyResponse, e
 	if !strings.Contains(value, ".") { // Instead of a regex let's at least check if there's at least a period in the domain
 		return nil, fmt.Errorf("%s. Invalid domain: %s", errLibrary, value)
 	}
-	r, err := c.get("domain", value, "company", webhook)
+	r, err := c.get("domain", value, "company/lookup", webhook)
 	if err != nil {
 		return nil, err
 	}
